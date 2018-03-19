@@ -12,8 +12,10 @@ Things to be done in the future:
 -updating antyspam filters
 
 
+
 Simple usage:
 
 python3 extract_email.py \<url\>
+
 python3 extract_email.py https://www.tutorialspoint.com/python/python_sending_email.htm
 
