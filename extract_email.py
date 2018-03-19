@@ -31,16 +31,11 @@ def html_to_ascii(htmlStr=""):
         return "" #htmlStr = '&#64;' #just an example
     return h.unescape(htmlStr)
 
-def soup_html(C):
-    soup = bs(C, 'lxml')
-    text = soup.get_text()
-    return text
-
 def convert_page(C=""):
     if not C:
         return ""
     signs = find_html_sign(C)
-    C = soup_html(C)    #remove all html tags
+    C = bs(C, 'lxml').get_text()    #remove all html tags
     for item in signs:
         C = C.replace(item, html_to_ascii(item))
     #this is the most fragile part; add any new form you find
