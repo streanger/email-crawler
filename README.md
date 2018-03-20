@@ -3,13 +3,13 @@ Email crawler for any kind of hiding/encoding. It will be improved if necessary
 
 Things to be done in the future:
 
-  >-GUI for noobs
+  - GUI for noobs
 
-  >-pyperclip to just copy and run program
+  - pyperclip to just copy and run program
 
-  >-searching subpages (should be made at first)
+  - searching subpages (should be made at first)
 
-  >-updating antyspam filters
+  - updating antyspam filters
 
 
 
