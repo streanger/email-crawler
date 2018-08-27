@@ -1,0 +1,54 @@
+http://www.pocztowe.info/adres_email.php
+
+Adres poczty internetowej sk³ada siê z trzech czêœci:
+
+- identyfikatora u¿ytkownika (unikalna nazwa nadawa przez buduj¹cego adres) - zwanego dalej loginem,
+- znaku umownego @ (z ang. "at") a po polsku zwanego - ma³p¹,
+- nazwy domeny pocztowej udostêpnianej przez dostawcê us³ugi pocztowej, lub w przypadku serwerów prywatnych - nadawanej przez buduj¹cego adres - zwanej dalej domen¹.
+
+Wybieraj¹c nazwê loginu - nale¿y stosowaæ siê do standardów RFC:
+
+- dozwolone s¹ du¿e i ma³e litery (a–z, A–Z) (ASCII: 65–90, 97–122)
+- dozwolone s¹ cyfry z zakresu od 0 do 9 (ASCII: 48–57)
+- dozwolone s¹ znaki !#$%&'*+-/=?^_`{|}~ (ASCII: 33, 35–39, 42, 43, 45, 47, 61, 63, 94–96, 123–126)
+- dozwolony jest znak . (kropka) (ASCII: 46)
+- adres nie mo¿e zaczynaæ siê od cyfry, znaku podkreœlenia, kropki a tak¿e myœlnika
+- dozwolone z ograniczeniami s¹ znaki specjalne. S¹ to: spacja oraz: 
+"(),:;<>@[\] (ASCII: 32, 34, 40, 41, 44, 58, 59, 60, 62, 64, 91–93)
+
+Ograniczenia oznaczaj¹ ¿e znaki te mog¹ byæ stosowane tylko wówczas, gdy znajduj¹ siê w cudzys³owie, a 2 z nich (backslash \ i cudzys³ów " (ASCII: 92, 34)) musz¹ byæ poprzedzone ukoœnikiem \ (np. "\\\""). Znaki specjalne w cudzys³owach nie s¹ powszechnie stosowane.
+
+Stosowanie ma³ych i du¿ych liter powinno skutkowaæ okreœleniem ró¿nych skrzynek pocztowych, jednak wiele serwerów traktuje ma³e i wielkie litery jako równowa¿ne.
+
+Miêdzynarodowe znaki powy¿ej U+007F s¹ dozwolone przez specyfikacjê RFC 6531, jednak¿e systemy poczty mog¹ ograniczyæ ich stosowanie podczas tworzenia lokalnej czêœci adresu (loginu).
+
+Adres pocztowy mo¿e zawieraæ komentarz, musi znajdowaæ siê on na pocz¹tku lub koñcu loginu i byæ zamkniêty nawiasami.
+
+Przyk³adowo - adresy pocztowe mog³yby mieæ nastêpuj¹c¹ postaæ:
+
+Moja.Firma_powstala_15-06-1999_roku@domena.pl
+!#$%&'*+-/=?^_`{}|~@domena.pl
+" "@domena.pl - (spacja pomiêdzy cudzys³owami)
+programy.pocztowe(komentarz)@domena.pl
+
+D³ugoœæ adresu wg standardów RFC nie mo¿e przekroczyæ 254 znaków. Maksymalna d³ugoœæ loginu to 64 znaki, natomiast domena mo¿e sk³adaæ siê z 253 znaków.
+
+Firmy udostêpniaj¹ce us³ugi pocztowe maj¹ prawo ograniczyæ formy adresów e-mail zgodnie z potrzebami. Wiêkszoœæ nie akceptuje dozwolonych standardem znaków ? oraz ^.
+
+Windows Live Mail (Hotmail) pozwala na tworzenie adresów e-mail przy u¿yciu znaków alfanumerycznych, kropki (.), podkreœlenia (_) i myœlnika (-). Blokuje natomiast wysy³anie poczty, jeœli adres docelowy zawiera zgodne ze standardem znaki: !#$%*/?^`{|}~.
+
+Znak kropki - zazwyczaj stosowany w celu polepszenia czytelnoœci identyfikatorów wielocz³onowych - ignorowany jest przez serwer pocztowy Gmail.
+Przyk³adowy adres: 
+- programy.pocztowe@gmail.com 
+odczytywany jest jako: 
+- programypocztowe@gmail.com
+Nie ma problemu z dostarczeniem wiadomoœci do adresata, w przypadku pominiêcia tego znaku w adresie.
+
+Inn¹ ciekawostk¹ dotycz¹c¹ tego konta jest mo¿liwoœæ dodania treœci po znaku plusa (+).
+Wys³ana wiadomoœci na adres: 
+- programy.pocztowe+dreammail@gmail.com
+równie¿ trafi na konto adresata.
+Jest to najlepsza opcja wysy³ania wiadomoœci z komentarzem umiejscowionym w identyfikatorze adresu pocztowego.
+
+Adres zawieraj¹cy znaki niestandardowe, nie przejdzie walidacji w wiêkszoœci programów pocztowych i nic tu nie pomo¿e fakt, ¿e RFC zezwala na ich stosowanie, wiadomoœæ nie zostanie wys³ana, o czym powiadomi nas stosowny komunikat.	Nie przejdzie jej równie¿, na stronach stosuj¹cych sprawdzanie jego poprawnoœci, przy wype³nianiu formularzy kontaktowych.
+Dlatego tworz¹c adres, warto zastosowaæ kryteria, jakimi kieruje siê poczta Hotmail. Bêdziemy mieæ pewnoœæ, ¿e nasze wiadomoœci bez przeszkód trafi¹ do adresata.
